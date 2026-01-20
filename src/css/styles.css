@@ -12,7 +12,112 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
+
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+.timer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+.form input[type='number'] {
+  padding: 8px 12px;
+  height: 40px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  font-size: 16px;
+}
+
+.form input[type='number']:focus {
+  outline: none;
+  border-color: #4e75ff;
+}
+
+.form-fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.form-fieldset legend {
+  padding: 0 6px;
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+.radio:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.form-button {
+  height: 40px;
+
+  background-color: #4e75ff;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #6c8cff;
+}
+
+.form-button:active {
+  background-color: #3b5bdb;
+}
